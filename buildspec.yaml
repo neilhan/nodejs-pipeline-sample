@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket nhan2-nodejs-pipeline-sample-bucket --output-template-file outputSamTemplate.yaml --capabilities CAPABILITY_IAM
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket nhan2-nodejs-pipeline-sample-bucket --output-template-file outputSamTemplate.yaml
       # - aws cloudformation package --template-file samTemplate.yaml --kms-key-id kms-key-id --s3-bucket bucket-name -nodejs-pipeline-sample-output --output-template-file outputSamTemplate.yaml
 
 artifacts:
