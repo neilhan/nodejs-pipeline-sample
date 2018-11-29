@@ -5,6 +5,7 @@ Resources:
   TimeFunction:
     Type: AWS::Serverless::Function
     Properties:
+      FunctionName: nodejs-pipeline-lambda-timeresource
       Handler: index.handler
       Runtime: nodejs6.10
       CodeUri: ./
