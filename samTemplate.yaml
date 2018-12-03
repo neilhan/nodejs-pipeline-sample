@@ -19,7 +19,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: nodejs-pipeline-lambda-greeting
-      Handler: index.handler
+      Handler: greet.handler
       Runtime: nodejs6.10
       CodeUri: ./
       Events:
