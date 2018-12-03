@@ -21,10 +21,10 @@ Resources:
       FunctionName: nodejs-pipeline-lambda-greeting
       Handler: greet.handler
       Runtime: nodejs6.10
-      CodeUri: ./
+      CodeUri: ./greet.js
       Events:
         MyTimeApi:
           Type: Api
           Properties:
-            Path: /greeting
+            Path: /greeting/{proxy+}
             Method: POST
