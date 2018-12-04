@@ -52,7 +52,7 @@ exports.handler = function (event, context, callback) {
 
     var response = {
         statusCode: responseCode,
-        headers:{
+        headers: {
             'x-custom-header': 'my custom header value..'
         },
         body: JSON.stringify(responseBody)
